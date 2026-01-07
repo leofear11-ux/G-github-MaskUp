@@ -1,0 +1,47 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+}
+
+.container{
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+.container h1{
+    padding-bottom: 20px;
+}
+input{
+    width: 80%;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 7px;
+    border-style: none;
+}
+input[type="submit"]{
+    background-color: black;
+    color: white;
+    width: 50%;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 2px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+input[type="submit"]:hover{
+    transform:scale(1.1);
+}
+a{
+    font-style: italic;
+    text-decoration: none;
+    transition: 0.4s;
+    color: rgb(4, 4, 4);
+}
+a:hover{
+    color: rgb(115, 111, 111);
+}
