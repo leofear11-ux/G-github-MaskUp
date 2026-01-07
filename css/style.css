@@ -22,6 +22,10 @@ header {
     background-color: var(--primary-color);
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header .logo {
@@ -60,6 +64,7 @@ header .login a {
 }
 main{
     padding: 20px;
+    margin-top: 30px;
 }
 
 main .banner{
@@ -94,7 +99,7 @@ main .banner{
     line-height: 1.6;
 }
 
-.banner .info a{
+.btn{
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--blue-color);
@@ -106,7 +111,98 @@ main .banner{
     transition: background-color 0.3s;
 }
 
-.banner .info a:hover{
+.btn:hover{
     background-color: var(--secondary-color);
     transform: scale(1.05);
+}
+
+.about{
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.about .content h3{
+    font-size: 28px;
+    color: var(--blue-color);
+    margin-bottom: 20px;
+}
+
+.about .content p{
+    font-size: 16px;
+    color: var(--text-color);
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+.about img{
+    width: 100%;
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+.products{
+    padding: 25px;
+    margin-top: 40px;
+    text-align: center;
+}
+.products h2{
+    font-size: 28px;
+    color: var(--blue-color);
+    margin-bottom: 20px;
+}
+
+.products .product-list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.products .product-list .product-item{
+    border: 2px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 5px;
+    width: 320px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s;
+}
+
+.product-item h3{
+    font-size: 22px;
+    color: var(--blue-color);
+    margin-bottom: 10px;
+}
+
+.product-item p{
+    font-size: 16px;
+    color: var(--text-color);
+    /* margin-bottom: 40px; */
+}
+
+.product-item .btn{
+    justify-self: end;
+}
+
+.product-item img{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.product-item:hover{
+    box-shadow: 0 1px 5px var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.products a{
+    margin-top: 20px;
+    font-size: 16px;
 }
