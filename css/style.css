@@ -58,25 +58,3 @@ header .login a {
     color: var(--blue-color);
     font-weight: 500;
 }
-
-.container .sect0 ul {
-    display: flex;
-    text-wrap: wrap;
-    list-style: none;
-    margin-top: 50px;
-}
-
-.container .sect1 ul {
-    display: flex;
-    text-wrap: wrap;
-    list-style: none;
-    margin-top: 50px;
-}
-
-.container .sect2 ul {
-    display: flex;
-    text-wrap: wrap;
-    list-style: none;
-    margin-top: 50px;
-}
-
