@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* ---- GÉNÉRAL ---- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+nav .home a{
+    display: flex;
+    justify-content: right;
+    margin-right: 150px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #4A90E2;
+    
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 0;
+    color: #4A90E2;
+}
+
+h2 {
+    font-size: 2.1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    font-weight: 400;
+    color: #767272;
+    text-align: start;
+}
+
+/* ---- GRILLE DE PRODUITS ---- */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.container ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container > section > ul {
+    margin-top: 0;
+}
+.container > section:not(:first-child) > ul {
+    margin-top: 20px;
+}
+
+/* ---- CARTE PRODUIT (style tennispro.fr) ---- */
+.container li {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 15px; /* Espace pour le bouton */
+}
+
+.container li:hover {
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ---- IMAGE DU PRODUIT ---- */
+.container li img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* ---- INFOS PRODUIT ---- */
+/* On utilise un pseudo-élément sur la carte pour le nom du produit */
+.container li::before {
+    content: "Masquer pour la santé"; /* Nom du produit */
+    display: block;
+    padding: 12px 10px 4px 10px;
+    font-size: 0.95em;
+    font-weight: 500;
+    color: #444;
+}
+
+.container li p {
+    padding: 0 10px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #007bff; /* Couleur bleue pour le prix */
+}
+
+/* ---- SELECTEUR DE QUANTITE ---- */
+.quantity-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0; /* Marge en haut et en bas */
+}
+
+.quantity-btn {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+    transition: background-color 0.2s;
+    user-select: none; /* Empêche la sélection du texte du bouton */
+}
+
+.quantity-btn:hover {
+    background-color: #e9ecef;
+}
+
+.quantity-value {
+    margin: 0 15px;
+    font-size: 1.2em;
+    font-weight: 700;
+    min-width: 20px; /* Empêche le layout de bouger */
+}
+
+
+/* On ajoute un faux bouton "Ajouter au panier" */
+.container li::after {
+    content: "Effectuz votre achat";
+    display: block;
+    background-color: #007bff; /* Vert pour le bouton */
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    margin: 0 15px; /* Marge sur les côtés seulement */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.container li:hover::after {
+    background-color: #218838; /* Couleur plus foncée au survol */
+}
+
+/* ---- FOOTER ---- */
+footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid #e9ecef;
+}
+
+footer p {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.2em;
+    color: #4A90E2;
+    margin: 0;
+    padding-bottom: 20px;
+}
+a{
+    text-decoration: none;
+}
+
