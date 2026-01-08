@@ -160,14 +160,14 @@ h2 {
 }
 
 /* ---- FOOTER ---- */
-footer {
+.sect3 {
     text-align: center;
     margin-top: 60px;
     padding-top: 30px;
     border-top: 1px solid #e9ecef;
 }
 
-footer p {
+.sect3 p {
     font-family: 'Pacifico', cursive;
     font-size: 2.2em;
     color: #4A90E2;
@@ -177,4 +177,85 @@ footer p {
 a{
     text-decoration: none;
 }
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+footer .foot-left ul{
+    text-align: center;
+    list-style: none;
+
+}
+
+footer .foot-left ul li{
+    font-size: 20px;
+    padding: 5px;
+}
+
+footer .foot-left ul li a{
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer .foot-right ul{
+    display: flex;
+    text-wrap: wrap;
+    gap: 50px;
+    list-style: none;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+footer .logo {
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+footer .logo a{
+    color: #007bff;
+}
+
+footer .foot-right ul #face{
+    color: #0429a3;
+}
+
+footer .foot-right ul #tube{
+    color: red;
+}
+
+footer .foot-right ul #inst{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background:  linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+body .copy{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #444;
+    font-size: 18px;
+}
+
+body .copy a{
+    color: #515BD4;
+}
+
+
 
