@@ -131,7 +131,7 @@ h2 {
 
 /* On ajoute un faux bouton "Ajouter au panier" */
 .container li::after {
-    content: "Ajouter au panier";
+    content: "Effectuz votre achat";
     display: block;
     background-color: #28a745; /* Vert pour le bouton */
     color: white;
