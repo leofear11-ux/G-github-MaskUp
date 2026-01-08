@@ -58,3 +58,26 @@ header .login a {
     color: var(--blue-color);
     font-weight: 500;
 }
+
+.sect0 ul{
+    display: flex;
+    text-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+}
+
+.sect0 ul li{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    width: calc(25% - 40px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.sect0 ul li :hover{
+    
+}
