@@ -64,7 +64,6 @@ header .login a {
 }
 main{
     padding: 20px;
-
     margin-top: 30px;
 }
 
@@ -100,7 +99,7 @@ main .banner{
     line-height: 1.6;
 }
 
-.banner .info a{
+.btn{
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--blue-color);
@@ -111,6 +110,7 @@ main .banner{
     flex-shrink: 0;
     transition: background-color 0.3s;
 }
+
 .btn:hover{
     background-color: var(--secondary-color);
     transform: scale(1.05);
@@ -205,8 +205,4 @@ main .banner{
 .products a{
     margin-top: 20px;
     font-size: 16px;
-}
-.banner .info a:hover{
-    background-color: var(--secondary-color);
-    transform: scale(1.05);
 }
