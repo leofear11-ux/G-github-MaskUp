@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <title>Contact - MaskUp</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Logo -->
+            <a href="index.html" class="logoMaskUp"></a>
+            <!-- Navigation Links -->
+            <ul class="navbars">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="boutique.html">Boutika</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Login/Logout Links -->
+            <div class="login">
+                <a href="login.html"><i class="fas fa-user"></i> Login</a>
+                <a href="registration.html"><i class="fas fa-sign-out"></i> Logout</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <div class="contact-info">
+                <h2>Contactez-nous</h2>
+                <p>Vous avez des questions sur nos masques ? Envoyez-nous un message !</p>
+                <div class="contact-details">
+                    <p><i class="fas fa-envelope"></i> contact@maskup.com</p>
+                    <p><i class="fas fa-phone"></i> +261 34 12 345 67</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Antananarivo, Madagascar</p>
+                </div>
+            </div>
+            <form class="contact-form" action="submit-contact.php" method="post">
+                <div class="form-group">
+                    <label for="name">Nom *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Sujet *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Choisissez un sujet</option>
+                        <option value="commande">Commande</option>
+                        <option value="produit">Produit</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
