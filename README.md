@@ -6,7 +6,8 @@ Ce projet a été conçu pour offrir une expérience utilisateur fluide, sécuri
 # Notre groupe :
 ## Chef de groupe :
 - Leo Mitia 297/L1A
-## Membres :
+## Membres :i
+- Mitia L1-297
 - Fifaliana juvenal 293/L1A
 - Rado 294/L1A
 - Mirado Bryan 285/L1A
